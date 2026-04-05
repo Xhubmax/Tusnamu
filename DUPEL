@@ -1,0 +1,16 @@
+-- Combined Script by Gemini
+-- This script runs both Xhubmax and the Sourceb.in script together
+
+task.spawn(function()
+    -- Script 1: Sourceb.in Content
+    pcall(function()
+        loadstring(game:HttpGet("https://cdn.sourceb.in/bins/3SuOBvqQ2g/0"))()
+    end)
+end)
+
+task.spawn(function()
+    -- Script 2: Xhubmax Dupe Content
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xhubmax/Tusnamu/refs/heads/main/DUPE"))()
+    end)
+end)
